@@ -96,7 +96,62 @@ nav {
   overflow: hidden;
 }
 
+.hero-decorations {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.deco {
+  position: absolute;
+  opacity: 0.5;
+}
+
+.daisy-1 {
+  width: 80px;
+  top: 12%;
+  left: 6%;
+  transform: rotate(-20deg);
+}
+
+.daisy-2 {
+  width: 60px;
+  top: 18%;
+  right: 8%;
+  transform: rotate(15deg);
+}
+
+.daisy-3 {
+  width: 50px;
+  bottom: 15%;
+  left: 12%;
+  transform: rotate(30deg);
+}
+
+.daisy-4 {
+  width: 70px;
+  bottom: 20%;
+  right: 6%;
+  transform: rotate(-10deg);
+}
+
+.daisy-5 {
+  width: 40px;
+  top: 40%;
+  left: 25%;
+  transform: rotate(45deg);
+}
+
+.bee {
+  position: absolute;
+  width: 60px;
+  top: -10px;
+  left: -15px;
+  opacity: 0.95;
+}
+
 .hero-content {
+  position: relative;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -112,6 +167,7 @@ nav {
   padding: 0.6rem 1.5rem;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+  position: relative;
 }
 
 .tagline {
@@ -278,6 +334,10 @@ footer {
 @media (max-width: 768px) {
   .hero {
     padding: 8rem 1.5rem 4rem;
+  }
+
+  .hero-decorations {
+    display: none;
   }
 
   .hero h1 {
