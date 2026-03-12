@@ -354,6 +354,7 @@ footer {
   .logo {
     border: none;
     padding: 0;
+    font-size: 1rem;
   }
 
   .hero-decorations {
